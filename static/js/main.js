@@ -7,7 +7,65 @@
 
 $(document).ready(function(){
 
+    ////////////// mmenu /////////////////
+
+    var $menu = $("#my-menu").mmenu({
+      "navbar": {
+        "title": ""
+      },
+      extensions: ['theme-white', 'position-front'],
+    });
+
+    var $icon = $("#nav__mobile");
+    var API = $menu.data( "mmenu" );
+    $icon.on( "click", function() {
+        API.open();
+    });
+
+    API.bind( "opened", function() {
+       setTimeout(function() {
+          $icon.addClass( "is-active" );
+       }, 100);
+       $icon.on( "click", function() {
+          API.close();
+       });
+    });
+
+   API.bind( "closed", function() {
+      setTimeout(function() {
+         $icon.removeClass( "is-active" );
+      }, 100);
+      $icon.on( "click", function() {
+         API.open();
+      });
+    });
+
+   $("#nav__mobile-menu").click(function() {
+      API.close ();
+    });
+
+  /////////////// height ////////////////////
+
+  $(".parts-item__cart").equalHeights();
+
+  ///////////// fancybox ////////////////////
+
   $(".fancybox").fancybox({
+      prevEffect  : 'none',
+      nextEffect  : 'none',
+      helpers : {
+        title : {
+            type: 'outside'
+        },
+        thumbs  : {
+            width : 50,
+            height  : 50
+        }
+      }
+    }
+  );
+
+  $(".fancybox2").fancybox({
       prevEffect  : 'none',
       nextEffect  : 'none',
       helpers : {
