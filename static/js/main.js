@@ -46,7 +46,7 @@ $(document).ready(function(){
 
   /////////////// height ////////////////////
 
-  $(".parts-item__cart").equalHeights();
+  // $(".parts-item__cart").equalHeights();
 
   ///////////// fancybox ////////////////////
 

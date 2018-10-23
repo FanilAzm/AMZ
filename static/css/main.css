@@ -3284,8 +3284,7 @@ h5 {
   position: relative;
   width: 100%;
   height: auto;
-  min-height: 300px;
-  padding: 30px;
+  min-height: 320px;
   margin-bottom: 20px;
   text-align: center;
   background-color: #fff;
@@ -3307,31 +3306,29 @@ h5 {
 .parts-item__back {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 30px;
-  right: 30px;
   transition: all 0.4s linear;
 }
 .parts-item__front {
   transform: rotateY(0deg);
   transform-origin: 50% 50%;
   z-index: 2;
+  position: absolute;
+  top: auto;
+  bottom: 30px;
+  left: 30px;
+  right: 30px;
 }
 .parts-item__back {
   transform: rotateY(180deg);
   transform-origin: 50% 50%;
-}
-.parts-item__img {
-  width: 100%;
-  height: 100%;
-  line-height: 200px;
+  padding: 30px;
 }
 .parts-item__img img {
   max-width: 250px;
   max-height: 200px;
 }
 .parts-item__title {
+  margin-top: 45px;
   text-align: left;
   font-size: 1.286rem;
 }
@@ -3345,7 +3342,6 @@ h5 {
   border-bottom: 1px solid #373433;
 }
 .parts-item__cart {
-  margin-top: 30px;
   text-align: left;
   background-color: #fff;
   transition: all 0.4s ease;
@@ -3708,12 +3704,6 @@ h5 {
   }
 }
 @media screen and (max-width: 1150px) {
-  .parts-item {
-    height: 360px;
-  }
-  .parts-item__front {
-    top: 30px;
-  }
   .contacts-title {
     width: 200px;
   }
@@ -3726,9 +3716,6 @@ h5 {
 @media screen and (max-width: 992px) {
   .nav-link {
     padding-right: 30px;
-  }
-  .parts-item {
-    height: 340px;
   }
   .news-item {
     margin-bottom: 30px;
