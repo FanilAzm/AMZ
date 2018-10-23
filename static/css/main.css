@@ -3132,8 +3132,8 @@ h5 {
 }
 #nav__mobile {
   position: fixed;
-  right: 15px;
-  top: 15px;
+  right: 10px;
+  top: 18px;
 }
 #nav__mobile,
 #nav__mobile-menu {
@@ -3829,7 +3829,7 @@ h5 {
     z-index: 5;
   }
   .phone {
-    padding-right: 40px;
+    padding-right: 30px;
   }
   .news {
     padding: 0;
