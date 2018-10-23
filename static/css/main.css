@@ -3130,6 +3130,11 @@ h5 {
 .nav-link:hover {
   color: #27a2f1;
 }
+#nav__mobile {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+}
 #nav__mobile,
 #nav__mobile-menu {
   width: 38px;
@@ -3706,6 +3711,9 @@ h5 {
   .parts-item {
     height: 360px;
   }
+  .parts-item__front {
+    top: 30px;
+  }
   .contacts-title {
     width: 200px;
   }
@@ -3720,7 +3728,7 @@ h5 {
     padding-right: 30px;
   }
   .parts-item {
-    height: 300px;
+    height: 340px;
   }
   .news-item {
     margin-bottom: 30px;
@@ -3747,6 +3755,31 @@ h5 {
   }
   .contacts-title {
     width: 130px;
+  }
+  .Spb {
+    left: 10%;
+  }
+  .Moscow {
+    left: 9%;
+  }
+  .Perm {
+    left: 22%;
+  }
+  .Berezniki {
+    left: 27%;
+  }
+  .Ekb {
+    left: 28%;
+  }
+  .Novosib {
+    top: 74%;
+    left: 37%;
+  }
+  .Kemerovo {
+    left: 41%;
+  }
+  .City {
+    left: 57%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -3783,6 +3816,21 @@ h5 {
   }
 }
 @media screen and (max-width: 767px) {
+  .header-top {
+    width: 100%;
+    position: fixed;
+    padding: 10px 0;
+    background-color: #fff;
+    z-index: 5;
+  }
+  .header-nav {
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+  }
+  .phone {
+    padding-right: 40px;
+  }
   .news {
     padding: 0;
   }
@@ -3807,6 +3855,10 @@ h5 {
   }
 }
 @media screen and (max-width: 576px) {
+  .sect-title h1,
+  .sect-title h3 {
+    font-size: 2rem;
+  }
   .gallery-1,
   .gallery-2 {
     width: 100%;
