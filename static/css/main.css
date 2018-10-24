@@ -4128,12 +4128,14 @@ h5 {
   .header-top {
     width: 100%;
     position: fixed;
+    top: 0;
     padding: 10px 0;
     background-color: #fff;
     z-index: 6;
   }
   .header-nav {
     width: 100%;
+    padding: 0;
     border: none;
     position: absolute;
     z-index: 6;
