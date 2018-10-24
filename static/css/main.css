@@ -3121,16 +3121,22 @@ h5 {
   border-radius: 50px;
   color: #fff;
   background-color: #27a2f1;
+  transition: all 0.3s time;
+  border: 1px solid transparent;
 }
-.katalog-link:after {
-  content: '';
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 20px;
-  background-image: url("../img/sprite/sprite.png");
-  background-position: -26px -76px;
-  width: 11px;
-  height: 10px;
+.katalog-link svg {
+  fill: #fff;
+  margin-left: 10px;
+}
+.katalog-link:hover {
+  border-color: #27a2f1;
+  color: #27a2f1;
+  background-color: #fff;
+  text-decoration: none;
+  transition: all 0.3s time;
+}
+.katalog-link:hover svg {
+  fill: #27a2f1;
 }
 .nav-link {
   padding-right: 60px;
@@ -3590,19 +3596,17 @@ h5 {
   padding: 80px 0 110px;
   border-bottom: 1px solid #dedede;
 }
-.gallery-1,
-.gallery-2 {
-  border-radius: 12px;
-  overflow: hidden;
-  position: absolute;
+.gallery-img {
+  position: relative;
+}
+.gallery-img__link {
+  position: relative;
   cursor: pointer;
 }
-.gallery-1 img,
-.gallery-2 img {
+.gallery-img__link img {
   width: 100%;
 }
-.gallery-1:before,
-.gallery-2:before {
+.gallery-img__link:before {
   content: '';
   display: inline-block;
   background-image: url("../img/sprite/sprite.png");
@@ -3611,22 +3615,33 @@ h5 {
   height: 31px;
   position: absolute;
 }
-.gallery-1 {
+.link-1,
+.link-4 {
+  position: absolute;
   bottom: -35px;
   left: 0;
-  z-index: 2;
+  z-index: 5;
 }
-.gallery-1:before {
+.link-1:before,
+.link-4:before {
   bottom: 13px;
   left: 13px;
 }
-.gallery-2 {
+.link-2,
+.link-3 {
+  position: absolute;
   top: -35px;
   right: 0;
+  z-index: 3;
 }
-.gallery-2:before {
+.link-2:before,
+.link-3:before {
   top: 13px;
   right: 13px;
+}
+.link-3,
+.link-4 {
+  z-index: 2;
 }
 .contacts {
   padding: 70px 0 80px;
@@ -3961,6 +3976,9 @@ h5 {
   color: #fff;
   border: none;
 }
+.footer-nav .katalog-link {
+  border: none;
+}
 @media screen and (max-width: 1200px) {
   .nav-link {
     padding-right: 40px;
@@ -4005,8 +4023,7 @@ h5 {
     width: 230px;
     margin: 0 auto;
   }
-  .gallery-1,
-  .gallery-2 {
+  .gallery-img__link {
     width: 85%;
   }
 }
@@ -4111,20 +4128,20 @@ h5 {
   .news {
     padding: 0;
   }
-  .gallery-1,
-  .gallery-2 {
+  .gallery-img__link {
     position: relative;
     width: 49%;
     display: inline-block;
   }
-  .gallery-1 img,
-  .gallery-2 img {
+  .gallery-img__link img {
     width: 100%;
   }
-  .gallery-1 {
+  .link-1,
+  .link-4 {
     bottom: 0;
   }
-  .gallery-2 {
+  .link-2,
+  .link-3 {
     top: 0;
   }
   .contacts-info {
