@@ -85,28 +85,40 @@ $(document).ready(function(){
   //   $('.parts-item').toggleClass('active');
   // });
 
-	$('.js-price__slider ').slick({
+	$('.js-slider').slick({
   speed: 300,
-  slidesToShow: 3,
+  slidesToShow: 5,
   slidesToScroll: 1,
+  nextArrow: '.slick-next',
+  prevArrow: '.slick-prev',
   responsive: [
     {
-      breakpoint: 1240,
+      breakpoint: 1100,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 4,
         slidesToScroll: 1,
-        nextArrow: '.price-slider__next',
-        prevArrow: '.price-slider__prev',
         infinite: true
       }
     },
     {
-      breakpoint: 950,
+      breakpoint: 930,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 700,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 470,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1, 
-        nextArrow: '.price-slider__next',
-        prevArrow: '.price-slider__prev'
+        slidesToScroll: 1,
       }
     }
   ]
