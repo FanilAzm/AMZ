@@ -3063,7 +3063,7 @@ h5 {
 .header-title {
   position: relative;
   display: inline-block;
-  margin-top: 15px;
+  margin-top: 12px;
   vertical-align: middle;
   font-size: 0.7857rem;
   font-family: "HelveticaMedium", Arial, sans-serif;
@@ -3910,23 +3910,26 @@ h5 {
   background-repeat: no-repeat;
 }
 .table {
+  overflow-x: hidden;
+}
+.table table {
   width: 100%;
   margin-top: 55px;
 }
-.table tr:nth-child(odd) {
+.table table tr:nth-child(odd) {
   background-color: #ddd;
 }
-.table td {
+.table table td {
   width: 15%;
   padding: 15px 30px;
   border: none;
   border-right: 1px solid #a2a3a4;
 }
-.table td:first-child {
+.table table td:first-child {
   width: 56%;
   border-radius: 3px 0 0 3px;
 }
-.table td:last-child {
+.table table td:last-child {
   border: none;
   border-radius: 0 3px 3px 0;
 }
@@ -3973,12 +3976,6 @@ h5 {
   .info-text {
     width: auto;
   }
-  .table td {
-    width: 16%;
-  }
-  .table td:first-child {
-    width: 53%;
-  }
   .info-text {
     padding: 0;
   }
@@ -3992,12 +3989,6 @@ h5 {
   }
   .katalog-item:nth-child(4n) {
     margin-right: 0;
-  }
-  .table td {
-    width: 17%;
-  }
-  .table td:first-child {
-    width: 50%;
   }
 }
 @media screen and (max-width: 992px) {
@@ -4164,6 +4155,9 @@ h5 {
   .gallery-2 {
     width: 100%;
   }
+  .table table td {
+    padding: 15px;
+  }
 }
 @media screen and (max-width: 450px) {
   .katalog-item:nth-child(2n) {
@@ -4171,5 +4165,15 @@ h5 {
   }
   .katalog-item:nth-child(1n) {
     margin-right: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .table table td {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .table table td {
+    padding: 5px;
   }
 }
