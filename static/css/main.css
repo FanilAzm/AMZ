@@ -4165,10 +4165,6 @@ h5 {
   .contacts-info {
     width: auto;
   }
-  .products,
-  .example {
-    padding-top: 100px;
-  }
   .info-text {
     margin-bottom: 20px;
   }
@@ -4186,9 +4182,8 @@ h5 {
   .sect-title .h3 {
     font-size: 2rem;
   }
-  .gallery-1,
-  .gallery-2 {
-    width: 100%;
+  .gallery-img__link {
+    width: 50%;
   }
   .table table td {
     padding: 15px;
@@ -4205,6 +4200,10 @@ h5 {
 @media screen and (max-width: 400px) {
   .table table td {
     padding: 10px;
+  }
+  .sect-title h1,
+  .sect-title .h3 {
+    font-size: 1.714rem;
   }
 }
 @media screen and (max-width: 350px) {
