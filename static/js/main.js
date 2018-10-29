@@ -7,6 +7,17 @@
 
 $(document).ready(function(){
 
+  /////////////// slider tabs //////////////////////
+
+    $('.js-slider').each(function() {
+      $(this).find('li').each(function(i) {
+        $(this).click(function(){
+          $(this).addClass('active').siblings().removeClass('active')
+            .closest('.tabs').find('.katalog-items').removeClass('active').eq(i).addClass('active');
+        });
+      });
+    });
+
     ////////////// mmenu /////////////////
 
     var $menu = $("#my-menu").mmenu({

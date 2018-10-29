@@ -3821,18 +3821,15 @@ h5 {
   opacity: 0;
   transition: all 0.2s time;
 }
-.slide .parts-item:hover:before,
-.slide .katalog-item:hover:before {
+.slide.active .parts-item:before {
   opacity: 1;
 }
-.slide .parts-item:hover .parts-item__title,
-.slide .katalog-item:hover .parts-item__title {
+.slide.active .parts-item__title {
   color: #fff;
   border-color: #fff;
   text-decoration: none;
 }
-.slide .parts-item:hover .parts-item__title h4,
-.slide .katalog-item:hover .parts-item__title h4 {
+.slide.active .parts-item__title h4 {
   border-color: #fff;
 }
 .slide .parts-item__img {
@@ -3870,7 +3867,11 @@ h5 {
   border-bottom: 1px solid #dedede;
 }
 .katalog-items {
+  display: none;
   text-align: center;
+}
+.katalog-items.active {
+  display: block;
 }
 .katalog-item {
   display: inline-block;
@@ -4138,6 +4139,9 @@ h5 {
   }
   .table td {
     padding: 15px;
+  }
+  .katalog-item:last-child {
+    margin-right: 0;
   }
 }
 @media screen and (max-width: 767px) {
