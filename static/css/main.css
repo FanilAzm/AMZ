@@ -4067,6 +4067,9 @@ h5 {
     width: 230px;
     margin: 0 auto;
   }
+  .gallery-img__link img {
+    min-height: auto;
+  }
 }
 @media screen and (max-width: 930px) {
   .katalog-item:nth-child(4n) {
