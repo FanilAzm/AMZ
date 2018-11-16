@@ -3268,7 +3268,6 @@ h5 {
 }
 .top {
   height: 620px;
-  background-image: url("../../static/img/content/bg-head.png");
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -3402,7 +3401,6 @@ h5 {
 .sertificate {
   padding: 80px 0 110px;
   height: 600px;
-  background-image: url("../../static/img/content/sert-bg.png");
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -3445,7 +3443,6 @@ h5 {
 .map-bg {
   padding: 90px 0;
   position: relative;
-  background-image: url("../../static/img/content/geography/map-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: -250px -300px;
@@ -3935,7 +3932,7 @@ h5 {
 .content h1,
 .content h2,
 .content h3 {
-  margin: 15px 0;
+  margin: 30px 0;
 }
 .content ol {
   padding: 0;
@@ -4005,7 +4002,7 @@ h5 {
 }
 .content p {
   text-indent: 15px;
-  margin: 30px 0;
+  margin: 15px 0;
 }
 .content p img {
   float: left;
